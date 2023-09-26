@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="shortcut icon" type="image/jpg" href="web.png"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/f14e72627e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav id="header-nav">
+        <div class="logo">Tulika Omrey</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#header-nav">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="main-nav">
+        <div class="logo">Tulika Omrey</div>
+        <div class="main-menu">
+            <div class="main-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+            </div>
+            <div class="menu-links">
+                    <li><a href="#header-nav" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+        </div>
+    </nav>
+
+
+
+    <section id="profile">
+       
+        <div class="section_text">
+            
+            <h1 class="title">Hello I'm Tulika Omrey</h1>
+            <p class="section_text_p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btnn btn-color-2" onclick="window.open('resume.pdf')">Download CV</button>
+
+                <button class="btnn btn-color-1" onclick="location.href='#contact'">Hire Me</button>
+            </div>
+            <div id="socials-container">
+                <img src="link.png" alt="Linkedin Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/tulikaomrey/'">
+                <img src="git.png" alt="GitHub Profile" class="icon" onclick="location.href='https://github.com/tulikaomrey'">
+
+            </div>
+        </div>
+
+        
+    </section>
+
+
+    <section id="about">
+        <p class="section_text_p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+
+        <div class="section-container">
+            <div class="section_pic-container">
+               <img src="about-pic.png" class="about-pic animate">
+            </div>
+
+            <div class="about-details-container">
+
+            <div class="about-containers">
+                <div class="text-container">
+                <p>Tulika Omrey is a dedicated and aspiring computer science enthusiast currently pursuing a Master's degree in Computer Applications at KIET Group of Institutions. With a passion for programming and a keen interest in both back-end and front-end development, Tulika possesses a solid command over programming languages like C, C++, and Java.
+    
+                    In the world of front-end development, Tulika has showcased her skills by crafting various web applications. One of her notable creations is a weather app, which not only demonstrates her technical prowess but also reflects her commitment to building practical solutions.
+                    
+                    Driven by a thirst for knowledge and a desire to excel in the field of computer science, Tulika Omrey is constantly expanding her skillset and exploring new horizons within the realm of software development. With a strong foundation in programming and a portfolio brimming with innovative projects, she is poised to make a significant impact in the ever-evolving world of technology.</p>
+                </div>
+                <div class="details-container">
+                    <div class="tab-titles">
+                      <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                      <p class="tab-links"onclick="opentab('education')">Education</p>
+                      <p class="tab-links "onclick="opentab('internship')">Internship</p>
+                    </div>
+
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Frontend Development</span><br>HTML,CSS,JS</li>
+                        <li><span>Familiar with Programming Languages</span><br>C , C++, Java</li>
+                        <li><span>Database</span><br>MySQL</li>
+                    </ul>
+                </div>
+                <div class="tab-contents"id="education">
+                    <ul>
+                        <li><span>2022- Current</span><br>MCA at KIET Group Of Institutions</li>
+                        <li><span>2019-2022</span><br>BCA at Makhanlal Chaturvedi National University Of Journalism and Communication</li>
+                        <li><span>2017-2018</span><br>Intermediate at Shree Vinayak Academy International School</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="internship">
+                    <ul>
+                        <li><span>May -July 2023</span><br>AI-ML Virtual intern at EduSkills Foundation</li>
+                        <li><span>May 2023</span><br>Cisco Cloud Security</li>
+                        
+                    </ul>
+                </div>
+                </div>
+            </div>
+            </div>
+            </div>
+          </div>
+          
+    </section>
+
+
+
+    <section id="projects">
+        <div class="container">
+            <p class="section_text_p1">Browse My Recent</p>
+            <h1 class="sub-title">Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-cloud"></i>
+                    <h2>Weather App</h2>
+                    <p>WeatherWise is a cutting-edge weather forecasting application that provides 
+                        you with real-time weather information at your fingertips. 
+                        This user-friendly app is designed to make checking the weather a breeze, whether you're planning your day, a weekend getaway, or a long-term trip. Powered by advanced weather APIs and developed using HTML, CSS, and JavaScript, WeatherWise ensures accurate and up-to-date weather data for any location around the world</p><br>
+                        <button class="btnn btn-color-2 project-btn" onclick="location.href='https://github.com/tulikaomrey/Weather-App-Project'">GitHub</button>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-music"></i>
+                    <h2>Music Player</h2>
+                    <p>Introducing WebTunes, a feature-rich web-based music player that takes your music listening experience to the next level. This project combines the power of HTML, CSS, and JavaScript to create a user-friendly and interactive platform for managing and enjoying your favorite tunes. With WebTunes, you can seamlessly manage your songs, control playback with play/pause buttons,
+                         and visually track the current song's progress in real-time</p> <br>
+        
+                         <button class="btnn btn-color-2 project-btn" onclick="location.href='https://github.com/tulikaomrey/Music-Player-Project'">GitHub</button>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-clock"></i>
+                    <h2>Digital Clock</h2>
+                    <p>DigitalClockPro  is a sleek and modern digital clock project developed using a combination of HTML, CSS, and JavaScript.
+                         This project offers a simple yet stylish way to keep track of time digitally. With its clean design and real-time updating, DigitalClockPro provides a convenient and visually appealing solution for timekeeping on the web.</p>  <br><br><br><br>
+                         <button class="btnn btn-color-2 project-btn" onclick="location.href='https://github.com/tulikaomrey/Digital-Clock'">GitHub</button>
+                </div>
+        
+        
+            </div>
+        </div>
+        
+        
+    </section>
+
+
+    <section id="contact">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="email.png" alt="Email" class="icon contact-icon email-icon">
+                <a href="mailto:tulikaomrey@gmail.com">tulikaomrey@gmail.com</a>
+            </div>
+            
+                <div class="contact-info-container">
+                    <img src="link.png" alt="LinkedIn" class="icon contact-icon">
+                    <a href="https://www.linkedin.com/in/tulikaomrey/">LinkedIn</a>
+                </div>
+
+                
+
+                
+        </div>
+    </section>
+
+    <footer>
+
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#header-nav">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>  
+        
+        <p>Copyright &#169; 2023 Tulika Omrey. All Rights Reserved. </p>
+    </footer>
+
+
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+            
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    function toggleMenu(){
+    const menu = document.querySelector(".menu-links");
+    const icon = document.querySelector(".main-icon");
+    menu.classList.toggle("open");
+    icon.classList.toggle("open");
+}
+
+
+    </script>
+    
+</body>
+</html>
